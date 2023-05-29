@@ -1,4 +1,4 @@
-import { Box, AppBar, styled, Toolbar, Typography, InputBase, Badge, Avatar} from "@mui/material";
+import { Box, AppBar, styled, Toolbar, Typography, InputBase, Badge, Avatar, Menu, MenuItem } from "@mui/material";
 import { Groups3, Mail, Notifications } from "@mui/icons-material"
 import React, { useState } from "react";
 
@@ -23,6 +23,7 @@ const IconsContainer = styled(Box)(({theme }) => ({
 })) 
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false)
     return (
          <AppBar position="sticky">
             <StyledToolbar>
@@ -41,10 +42,35 @@ const Navbar = () => {
                         <Notifications />
                     </Badge>
                     <Avatar 
-                        sx={ { width:30, height:30 } }src="/one-piece/luffy-profile-one.jpeg" 
+                        sx={ { width:30, height:30 } }
+                        src="/one-piece/luffy-profile-one.jpeg" 
+                        onClick={ () => setIsOpen(true) }
                     />
                 </IconsContainer>
             </StyledToolbar>
+            <Menu
+                id="x"
+                aria-labelledby="x"
+                open={isOpen}
+                onClose={ () => setIsOpen(false) }
+                PaperProps={{
+                    style: {
+                      marginTop: '105px',
+                    },
+                  }}
+                anchorOrigin={{
+                    vertical:'top',
+                    horizontal:'right'
+                }}
+                transformOrigin={{
+                    vertical:'top',
+                    horizontal:'right'
+                }}
+            >
+                <MenuItem>Option 1</MenuItem>
+                <MenuItem>Option 2</MenuItem>
+                <MenuItem>Option 3</MenuItem>
+            </Menu>
          </AppBar>
     )
 }
