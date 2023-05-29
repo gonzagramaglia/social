@@ -27,5 +27,16 @@ npx create-react-app .
 ```
 (By using the period (.) after the command, you tell React to create the project in the current folder instead of creating a new folder with the name of the project)
 
-#### File purification
+#### Project file purification
 Since there are several files that were created in the previous step that are not going to be used, they are removed. The src & public folders are deleted and a new ones are created.
+
+#### Dependencies that were used, along with the command to install them:
+
+* **Material UI**
+_Official website: https://mui.com/_ (suite of UI tools to help you ship new features faster)
+
+```bash
+npm install -legacy-peer-deps @mui/material @emotion/react @emotion/styled
+```
+
+<br>
