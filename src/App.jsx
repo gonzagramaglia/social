@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub } from 'react-icons/fa';
 import { Box, Stack } from "@mui/material"
+import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Feed from "./components/Feed"
 import Rightbar from "./components/Rightbar";
@@ -25,7 +26,7 @@ const App = () => {
                 </a>
             </nav>
             <Box>
-                {/* <Navbar /> */}
+                <Navbar /> 
                 <Stack direction="row" spacing={ {xs:0, sm:2} } justifyContent="space-between" >
                     <Sidebar />
                     <Feed />
