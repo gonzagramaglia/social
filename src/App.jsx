@@ -1,5 +1,9 @@
 import React from "react";
 import { FaGithub } from 'react-icons/fa';
+import { Box, Stack } from "@mui/material"
+import Sidebar from "./components/Sidebar";
+import Feed from "./components/Feed"
+import Rightbar from "./components/Rightbar";
 
 
 const App = () => {
@@ -20,9 +24,14 @@ const App = () => {
                     <FaGithub size={23} style={{ color: '#a9a6c3' }} />
                 </a>
             </nav>
-            <div>
-                <h1>Hello World!</h1>
-            </div>
+            <Box>
+                {/* <Navbar /> */}
+                <Stack direction="row" spacing={2} justifyContent="space-between" >
+                    <Sidebar />
+                    <Feed />
+                    <Rightbar />
+                </Stack>
+            </Box>
         </>
     )
 }
