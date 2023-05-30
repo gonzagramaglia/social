@@ -27,25 +27,9 @@ const Sidebar = () => {
                     <ListItem disablePadding>
                         <ListItemButton component="a" href="#simple-list">
                         <ListItemIcon>
-                            <Article />
+                            <AccountBox />
                         </ListItemIcon>
-                        <ListItemText primary="Pages" />
-                        </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                        <ListItemButton component="a" href="#simple-list">
-                        <ListItemIcon>
-                            <Group />
-                        </ListItemIcon>
-                        <ListItemText primary="Groups" />
-                        </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                        <ListItemButton component="a" href="#simple-list">
-                        <ListItemIcon>
-                            <Storefront />
-                        </ListItemIcon>
-                        <ListItemText primary="Marketplace" />
+                        <ListItemText primary="Profile" />
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
@@ -59,17 +43,33 @@ const Sidebar = () => {
                     <ListItem disablePadding>
                         <ListItemButton component="a" href="#simple-list">
                         <ListItemIcon>
-                            <Settings />
+                            <Group />
                         </ListItemIcon>
-                        <ListItemText primary="Settings" />
+                        <ListItemText primary="Groups" />
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                         <ListItemButton component="a" href="#simple-list">
                         <ListItemIcon>
-                            <AccountBox />
+                            <Article />
                         </ListItemIcon>
-                        <ListItemText primary="Profile" />
+                        <ListItemText primary="Pages" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#simple-list">
+                        <ListItemIcon>
+                            <Storefront />
+                        </ListItemIcon>
+                        <ListItemText primary="Marketplace" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#simple-list">
+                        <ListItemIcon>
+                            <Settings />
+                        </ListItemIcon>
+                        <ListItemText primary="Settings" />
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
