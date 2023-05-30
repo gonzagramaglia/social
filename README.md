@@ -11,7 +11,7 @@ during the **[Material UI 5 (MUI) React Tutorial](https://www.youtube.com/watch?
 
 📌 **LIVE DEMO: _https://social.gonza.gr/_**
 
-[![Social Demo Preview](https://postimg.cc/BXw5Dv05)](https://postimg.cc/BXw5Dv05)
+[![Social Demo Preview](https://i.postimg.cc/8c2zFQ9F/social-demo.png)](https://i.postimg.cc/8c2zFQ9F/social-demo.png)
 
 <br><br><br>
 
