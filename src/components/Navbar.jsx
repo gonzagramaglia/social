@@ -27,7 +27,7 @@ const Navbar = () => {
     return (
          <AppBar 
             position="sticky"
-            sx={ { padding:{ lg:"0px 80px", md:"0px 40px" } } }
+            sx={ { padding:{ lg:"0px 80px", md:"0px 40px", sm: "0px 25px" } } }
         >
             <StyledToolbar>
                 <Box sx={ { display:"flex", flexDirection:"row", gap:"10px", alignItems:"center" } }>
