@@ -32,7 +32,7 @@ const Post = () => {
                     <Avatar 
                         alt="Frankey"
                         src="/one-piece/frankey-profile.webp"
-                        sx={{ bgcolor: "red" }} aria-label="recipe"
+                        sx={{ bgcolor: "#20BB9A" }} aria-label="recipe"
                     >
                     </Avatar>
                 }
@@ -78,7 +78,7 @@ const Post = () => {
                         <Avatar 
                             alt="Chopper"
                             src="/one-piece/chopper-profile.webp"
-                            sx={{ bgcolor: "red", width:"30px", height:"30px" }} aria-label="recipe"
+                            sx={{ bgcolor: "#20BB9A", width:"30px", height:"30px" }} aria-label="recipe"
                         >
                         </Avatar>
                         <Typography 
@@ -97,7 +97,7 @@ const Post = () => {
                         <Avatar 
                             alt="Usopp"
                             src="/one-piece/usopp-profile.jpeg"
-                            sx={{ bgcolor: "red", width:"30px", height:"30px" }} aria-label="recipe"
+                            sx={{ bgcolor: "#20BB9A", width:"30px", height:"30px" }} aria-label="recipe"
                         >
                         </Avatar>
                         <Typography 
@@ -117,7 +117,7 @@ const Post = () => {
                         <Avatar 
                             alt="Luffy"
                             src="/one-piece/luffy-profile-one.jpeg"
-                            sx={{ bgcolor: "red", width:"30px", height:"30px" }} aria-label="recipe"
+                            sx={{ bgcolor: "#20BB9A", width:"30px", height:"30px" }} aria-label="recipe"
                         >
                         </Avatar>
                         <Typography 
