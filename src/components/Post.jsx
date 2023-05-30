@@ -57,7 +57,7 @@ const Post = () => {
             />
             <CardContent>
                 <Typography variant="body2" color="text.secondary">
-                    New feature of the Franky Shogun 😎
+                    New feature of the Frankey Shogun 😎
                 </Typography>
             </CardContent>
             <CardActions 
