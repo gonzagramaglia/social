@@ -25,7 +25,10 @@ const IconsContainer = styled(Box)(({theme }) => ({
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
-         <AppBar position="sticky">
+         <AppBar 
+            position="sticky"
+            sx={ { padding:{ lg:"0px 80px", md:"0px 40px" } } }
+        >
             <StyledToolbar>
                 <Box sx={ { display:"flex", flexDirection:"row", gap:"10px", alignItems:"center" } }>
                     <Groups3 />
