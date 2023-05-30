@@ -75,9 +75,9 @@ const Navbar = () => {
                     horizontal:'right'
                 }}
             >
-                <MenuItem>Option 1</MenuItem>
-                <MenuItem>Option 2</MenuItem>
-                <MenuItem>Option 3</MenuItem>
+                <MenuItem>Profile</MenuItem>
+                <MenuItem>Settings</MenuItem>
+                <MenuItem>Log Out</MenuItem>
             </Menu>
          </AppBar>
     )
