@@ -9,7 +9,7 @@ const Rightbar = () => {
             sx={{ display: { xs: "none", md: "block" } }}
             minWidth={235}
         >
-            <Box position="fixed" width={250}>
+            <Box position="fixed" width={257}>
                 <Typography variant="h6" fontWeight={100}>
                     Online Friends
                 </Typography>
@@ -61,13 +61,13 @@ const Rightbar = () => {
                 <Typography variant="h6" fontWeight={100} mt={2}>
                     Latest Conversations
                 </Typography>
-                <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                    <ListItem alignItems="flex-start">
+                <List sx={{ width: '100%', marginLeft:'-18px', maxWidth: 360, bgcolor: 'background.paper' }}>
+                <ListItem alignItems="flex-start">
                     <ListItemAvatar>
-                        <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/3.jpg" />
+                        <Avatar alt="Mugiwara" src="/one-piece/mugiwara-flag.jpeg" />
                     </ListItemAvatar>
                     <ListItemText
-                        primary="Brunch this weekend?"
+                        primary="[Group] Mugiwara"
                         secondary={
                         <React.Fragment>
                             <Typography
@@ -76,9 +76,9 @@ const Rightbar = () => {
                             variant="body2"
                             color="text.primary"
                             >
-                            Ali Connors
+                            Nami
                             </Typography>
-                            {" — I'll be in your neighborhood doing errands this…"}
+                            {": Who was the funny one that put back the flag that Luf..."}
                         </React.Fragment>
                         }
                     />
@@ -86,10 +86,10 @@ const Rightbar = () => {
                     <Divider variant="inset" component="li" />
                     <ListItem alignItems="flex-start">
                     <ListItemAvatar>
-                        <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+                        <Avatar alt="Tama" src="/one-piece/tama-profile.webp" />
                     </ListItemAvatar>
                     <ListItemText
-                        primary="Summer BBQ"
+                        primary="Hey, Tama!"
                         secondary={
                         <React.Fragment>
                             <Typography
@@ -98,9 +98,9 @@ const Rightbar = () => {
                             variant="body2"
                             color="text.primary"
                             >
-                            to Scott, Alex, Jennifer
+                            You
                             </Typography>
-                            {" — Wish I could come, but I'm out of town this…"}
+                            {': How are things going in Wano?? Hope great!!'}
                         </React.Fragment>
                         }
                     />
@@ -108,10 +108,10 @@ const Rightbar = () => {
                     <Divider variant="inset" component="li" />
                     <ListItem alignItems="flex-start">
                     <ListItemAvatar>
-                        <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+                        <Avatar alt="Garp" src="/one-piece/garp-profile.jpg" />
                     </ListItemAvatar>
                     <ListItemText
-                        primary="Oui Oui"
+                        primary="Take care, Luffy"
                         secondary={
                         <React.Fragment>
                             <Typography
@@ -120,9 +120,9 @@ const Rightbar = () => {
                             variant="body2"
                             color="text.primary"
                             >
-                            Sandra Adams
+                            Garp
                             </Typography>
-                            {' — Do you have Paris recommendations? Have you ever…'}
+                            {": Stay strong and continue being the brave young m.."}
                         </React.Fragment>
                         }
                     />

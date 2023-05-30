@@ -59,6 +59,7 @@ const Navbar = () => {
                 PaperProps={{
                     style: {
                       marginTop: '105px',
+                      marginRight: { lg:'100px', md:'40px', sm: '25px' },
                     },
                   }}
                 anchorOrigin={{
