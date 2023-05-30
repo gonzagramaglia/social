@@ -13,7 +13,7 @@ const Rightbar = () => {
                 <Typography variant="h6" fontWeight={100}>
                     Online Friends
                 </Typography>
-                <AvatarGroup max={7}>
+                <AvatarGroup max={7} sx={{ cursor: 'pointer' }} >
                     <Avatar
                         alt="Shanks"
                         src="/one-piece/shanks-profile.webp"
@@ -64,7 +64,7 @@ const Rightbar = () => {
                 <List sx={{ width: '100%', marginLeft:'-18px', maxWidth: 360, bgcolor: 'background.paper' }}>
                 <ListItem alignItems="flex-start">
                     <ListItemAvatar>
-                        <Avatar alt="Mugiwara" src="/one-piece/mugiwara-flag.jpeg" />
+                        <Avatar alt="Mugiwara" src="/one-piece/mugiwara-flag.jpeg" sx={{ cursor: 'pointer' }} />
                     </ListItemAvatar>
                     <ListItemText
                         primary="[Group] Mugiwara"
@@ -86,7 +86,7 @@ const Rightbar = () => {
                     <Divider variant="inset" component="li" />
                     <ListItem alignItems="flex-start">
                     <ListItemAvatar>
-                        <Avatar alt="Tama" src="/one-piece/tama-profile.webp" />
+                        <Avatar alt="Tama" src="/one-piece/tama-profile.webp" sx={{ cursor: 'pointer' }} />
                     </ListItemAvatar>
                     <ListItemText
                         primary="Hey, Tama!"
@@ -108,7 +108,7 @@ const Rightbar = () => {
                     <Divider variant="inset" component="li" />
                     <ListItem alignItems="flex-start">
                     <ListItemAvatar>
-                        <Avatar alt="Garp" src="/one-piece/garp-profile.jpg" />
+                        <Avatar alt="Garp" src="/one-piece/garp-profile.jpg" sx={{ cursor: 'pointer' }} />
                     </ListItemAvatar>
                     <ListItemText
                         primary="Take care, Luffy"

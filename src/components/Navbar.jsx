@@ -30,14 +30,19 @@ const Navbar = () => {
             sx={ { padding:{ lg:"0px 80px", md:"0px 40px", sm: "0px 25px" } } }
         >
             <StyledToolbar>
-                <Box sx={ { display:"flex", flexDirection:"row", gap:"10px", alignItems:"center" } }>
+                <Box 
+                    sx={ { display:"flex", flexDirection:"row", gap:"10px", alignItems:"center", cursor: "pointer" } } 
+                    onClick={ () => {window.location.href = "https://social.gonza.gr"} } 
+                >
                     <Groups3 />
                     <Typography variant="h6" sx={ { display:{ xs:"none", sm:"block" } } }>Social</Typography>
                 </Box>
                 <Search>
                     <InputBase placeholder="Search" />
                 </Search>
-                <IconsContainer >
+                <IconsContainer 
+                    sx={{ cursor: "pointer" }}
+                >
                     <Badge badgeContent={4} color="error" >
                         <Mail />
                     </Badge>
@@ -59,7 +64,6 @@ const Navbar = () => {
                 PaperProps={{
                     style: {
                       marginTop: '105px',
-                      marginRight: { lg:'100px', md:'40px', sm: '25px' },
                     },
                   }}
                 anchorOrigin={{
