@@ -4,13 +4,8 @@ import { Box, Avatar, Card, CardActions, CardContent, CardHeader, CardMedia, Che
 
 
 const Post = () => {
-    const [isChecked, setIsChecked] = useState(true);
     const [comment, setComment] = useState("");
     const [comments, setComments] = useState([]);
-
-    const handleCheckboxChange = () => {
-        setIsChecked(!isChecked);
-    };
 
     const handleCommentChange = (e) => {
         setComment(e.target.value);
@@ -66,8 +61,6 @@ const Post = () => {
             >
                 <IconButton aria-label="Add to favorites">
                 <Checkbox
-                    checked={isChecked}
-                    onChange={handleCheckboxChange}
                     icon={<FavoriteBorder />}
                     checkedIcon={<Favorite sx={{ color: "red" }} />}
                 />
