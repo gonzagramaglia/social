@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaGithub } from 'react-icons/fa';
-import { Box, Stack } from "@mui/material"
+import { Box, createTheme, Stack, ThemeProvider } from "@mui/material"
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Feed from "./components/Feed"
@@ -9,8 +9,17 @@ import Add from "./components/Add";
 
 
 const App = () => {
+
+    const [mode, setMode] = useState("dark")
+
+    const darkTheme = createTheme({
+        palette:{
+            mode: mode
+        }
+    })
+
     return (
-        <>
+        <ThemeProvider theme={darkTheme}>
             <Box
                 position="fixed"
                 width="100%"
@@ -32,16 +41,16 @@ const App = () => {
                     </a>
                 </nav>
             </Box>
-            <Box>
+            <Box bgcolor={"background.default"} color={"text.primary"} >
                 <Navbar /> 
                 <Stack direction="row" spacing={ {xs:0, sm:2} } justifyContent="space-between" >
-                    <Sidebar />
+                    <Sidebar mode={mode} setMode={setMode} />
                     <Feed />
                     <Rightbar />
                     <Add />
                 </Stack>
             </Box>
-        </>
+        </ThemeProvider>
     )
 }
 
