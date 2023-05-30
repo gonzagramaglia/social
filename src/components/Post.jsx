@@ -54,7 +54,10 @@ const Post = () => {
                     New feature of the Franky Shogun 😎
                 </Typography>
             </CardContent>
-            <CardActions disableSpacing>
+            <CardActions 
+                disableSpacing 
+                sx={{ margin:"-27px -10px -32px" }}
+            >
                 <IconButton aria-label="add to favorites">
                 <Checkbox
                     checked={isChecked}
