@@ -9,7 +9,7 @@ const Sidebar = () => {
             p={2} 
             sx={ { display: { xs:"none", sm:"flex" } } }
             justifyContent="right"
-            minWidth={160}
+            minWidth={170}
         >
             <Box
                 position="fixed"

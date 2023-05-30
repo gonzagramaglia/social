@@ -7,7 +7,7 @@ const Rightbar = () => {
             flex={2} 
             p={2} 
             sx={{ display: { xs: "none", md: "block" } }}
-            minWidth={235}
+            minWidth={265}
         >
             <Box position="fixed" width={257}>
                 <Typography variant="h6" fontWeight={100}>
