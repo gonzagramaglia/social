@@ -5,12 +5,15 @@ import { AccountBox, Article, Group, Home, ModeNight, Person, Settings, Storefro
 const Sidebar = () => {
     return (
         <Box 
-            flex={1} 
+            flex={1.5} 
             p={2} 
-            sx={ { display: { xs:"none", sm:"block" } } }
+            sx={ { display: { xs:"none", sm:"flex" } } }
+            justifyContent="right"
+            minWidth={160}
         >
             <Box
                 position="fixed"
+                width="100"
             >
                 <List>
                     <ListItem disablePadding>
