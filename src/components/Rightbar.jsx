@@ -9,7 +9,11 @@ const Rightbar = () => {
             sx={{ display: { xs: "none", md: "block" } }}
             minWidth={265}
         >
-            <Box position="fixed" width={257}>
+            <Box 
+                position="fixed" 
+                width={257}
+                sx={{ marginTop:"165px" }}
+            >
                 <Typography variant="h6" fontWeight={100}>
                     Online Friends
                 </Typography>

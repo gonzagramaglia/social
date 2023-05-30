@@ -14,6 +14,7 @@ const Sidebar = () => {
             <Box
                 position="fixed"
                 width="100"
+                sx={{ marginTop:"152px" }}
             >
                 <List>
                     <ListItem disablePadding>

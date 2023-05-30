@@ -26,8 +26,8 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
          <AppBar 
-            position="sticky"
-            sx={ { padding:{ lg:"0px 80px", md:"0px 40px", sm: "0px 25px" } } }
+            position="fixed"
+            sx={ { padding:{ lg:"0px 80px", md:"0px 40px", sm: "0px 25px" }, marginTop:"100px" } }
         >
             <StyledToolbar>
                 <Box 
