@@ -19,7 +19,7 @@ const Feed = () => {
           <Skeleton variant="text" height={100} />
           <Skeleton variant="text" height={20} />
           <Skeleton variant="text" height={20} />
-          <Skeleton variant="rectangular" height={300} />
+          <Skeleton variant="rectangular" height={700} />
         </Stack>
       ) : (
         < Box sx={{ marginTop:"165px", marginLeft:{xs:"0px", sm:"-50px"}, marginRight:{xs:"0px", md:"-40px"} }}>
