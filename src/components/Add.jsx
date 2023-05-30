@@ -47,7 +47,7 @@ const Add = () => {
                 p={3}
                 borderRadius={5}
             >
-                <Typography variant="h6" color="gray" textAlign="center">
+                <Typography variant="h6" color="gray" textAlign="center" marginBottom={2} >
                 Create post
                 </Typography>
                 <UserBox>
