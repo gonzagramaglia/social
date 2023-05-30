@@ -46,7 +46,7 @@ const Add = ({theme}) => {
         >
             <Box
                 width={400}
-                height={280}
+                height={295}
                 bgcolor={theme.palette.secondary.medium}
                 color={theme.palette.text.main}
                 p={3}
