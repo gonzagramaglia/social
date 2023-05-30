@@ -2,7 +2,7 @@ import { Box, Stack, Skeleton } from "@mui/material";
 import React, { useState } from "react";
 import Post from "./Post";
 
-const Feed = () => {
+const Feed = ({ theme }) => {
   const [loading, setLoading] = useState(true);
 
   setTimeout(() => {
@@ -23,12 +23,12 @@ const Feed = () => {
         </Stack>
       ) : (
         < Box sx={{ marginTop:"165px", marginLeft:{xs:"0px", sm:"-50px"}, marginRight:{xs:"0px", md:"-40px"} }}>
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
+          <Post theme={theme} />
+          <Post theme={theme} />
+          <Post theme={theme} />
+          <Post theme={theme} />
+          <Post theme={theme} />
+          <Post theme={theme} />
         </Box>
       )}
     </Box>

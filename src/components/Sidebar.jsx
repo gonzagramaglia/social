@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from "@mui/material"
-import { AccountBox, Article, Group, Home, ModeNight, Person, Settings, Storefront } from "@mui/icons-material";
+import { AccountBox as Profile, Article as Pages, Group, Home, ModeNight, Person, Settings, Storefront as Shop } from "@mui/icons-material";
 
-const Sidebar = ({ mode, setMode }) => {
+const Sidebar = ({ theme, isDarkMode, setIsDarkMode }) => {
     return (
         <Box 
             flex={1.5} 
@@ -19,66 +19,76 @@ const Sidebar = ({ mode, setMode }) => {
                 <List>
                     <ListItem disablePadding>
                         <ListItemButton component="a" href="#home">
-                        <ListItemIcon>
-                            <Home />
-                        </ListItemIcon>
-                        <ListItemText primary="Home" />
+                            <ListItemIcon>
+                                <Home sx={{ color: theme.palette.icons.main }} />
+                            </ListItemIcon>
+                            <ListItemText primary="Home" />
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                        <ListItemButton component="a" href="#profile">
-                        <ListItemIcon>
-                            <AccountBox />
-                        </ListItemIcon>
-                        <ListItemText primary="Profile" />
+                            <ListItemButton component="a" href="#profile">
+                            <ListItemIcon>
+                                <Profile sx={{ color: theme.palette.icons.main }} />
+                            </ListItemIcon>
+                            <ListItemText primary="Profile" />
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                         <ListItemButton component="a" href="#friends">
-                        <ListItemIcon>
-                            <Person />
-                        </ListItemIcon>
-                        <ListItemText primary="Friends" />
+                            <ListItemIcon>
+                                <Person sx={{ color: theme.palette.icons.main }} />
+                            </ListItemIcon>
+                            <ListItemText primary="Friends" />
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                         <ListItemButton component="a" href="#groups">
-                        <ListItemIcon>
-                            <Group />
-                        </ListItemIcon>
-                        <ListItemText primary="Groups" />
+                            <ListItemIcon>
+                                <Group sx={{ color: theme.palette.icons.main }} />
+                            </ListItemIcon>
+                            <ListItemText primary="Groups" />
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                         <ListItemButton component="a" href="#pages">
-                        <ListItemIcon>
-                            <Article />
-                        </ListItemIcon>
-                        <ListItemText primary="Pages" />
+                            <ListItemIcon>
+                                <Pages sx={{ color: theme.palette.icons.main }} />
+                            </ListItemIcon>
+                            <ListItemText primary="Pages" />
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                         <ListItemButton component="a" href="#shop">
-                        <ListItemIcon>
-                            <Storefront />
-                        </ListItemIcon>
-                        <ListItemText primary="Shop" />
+                            <ListItemIcon>
+                                <Shop sx={{ color: theme.palette.icons.main }} />
+                            </ListItemIcon>
+                            <ListItemText primary="Shop" />
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                         <ListItemButton component="a" href="#settings">
-                        <ListItemIcon>
-                            <Settings />
-                        </ListItemIcon>
-                        <ListItemText primary="Settings" />
+                            <ListItemIcon>
+                                <Settings sx={{ color: theme.palette.icons.main }} />
+                            </ListItemIcon>
+                            <ListItemText primary="Settings" />
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                         <ListItemButton component="a" href="#night-mode">
-                        <ListItemIcon>
-                            <ModeNight />
-                        </ListItemIcon>
-                        <Switch onChange={ () => { setMode( mode === "dark" ? "light" : "dark" ) } }/>
+                            <ListItemIcon>
+                                <ModeNight sx={{ color: theme.palette.icons.main }} />
+                            </ListItemIcon>
+                            <Switch
+                            onChange={() => setIsDarkMode(!isDarkMode)}
+                            sx={{
+                                "& .MuiSwitch-thumb": {
+                                    backgroundColor: theme.palette.text.main 
+                                },
+                                "& .MuiSwitch-track": {
+                                    backgroundColor: theme.palette.text.minor 
+                                },
+                            }}
+                        />
                         </ListItemButton>
                     </ListItem>
                 </List>

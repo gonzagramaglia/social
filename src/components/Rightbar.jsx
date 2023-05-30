@@ -1,7 +1,7 @@
-import { Avatar, AvatarGroup, Box, Divider, ImageList, ImageListItem, List, ListItem, ListItemAvatar, ListItemText, Typography } from "@mui/material";
+import { Avatar, AvatarGroup, Box, Divider, List, ListItem, ListItemAvatar, ListItemText, Typography } from "@mui/material";
 import React from "react";
   
-const Rightbar = () => {
+const Rightbar = ({ theme }) => {
     return (
         <Box 
             flex={2} 
@@ -17,7 +17,7 @@ const Rightbar = () => {
                 <Typography variant="h6" fontWeight={100}>
                     Online Friends
                 </Typography>
-                <AvatarGroup max={7} sx={{ cursor: 'pointer' }} >
+                <AvatarGroup max={7} sx={{ cursor: "pointer" }} >
                     <Avatar
                         alt="Shanks"
                         src="/one-piece/shanks-profile.webp"
@@ -65,71 +65,87 @@ const Rightbar = () => {
                 <Typography variant="h6" fontWeight={100} mt={2}>
                     Latest Conversations
                 </Typography>
-                <List sx={{ width: '100%', marginLeft:'-18px', maxWidth: 360, bgcolor: 'background.paper' }}>
-                <ListItem alignItems="flex-start">
-                    <ListItemAvatar>
-                        <Avatar alt="Mugiwara" src="/one-piece/mugiwara-flag.jpeg" sx={{ cursor: 'pointer' }} />
-                    </ListItemAvatar>
-                    <ListItemText
-                        primary="[Group] Mugiwara"
-                        secondary={
-                        <React.Fragment>
-                            <Typography
-                            sx={{ display: 'inline' }}
-                            component="span"
-                            variant="body2"
-                            color="text.primary"
-                            >
-                            Nami
-                            </Typography>
-                            {": Who was the funny one that put back the flag that Luf..."}
-                        </React.Fragment>
-                        }
-                    />
+                <List sx={{ width: "100%", marginLeft:"-18px", maxWidth: 360, bgcolor: "theme.palette.secondary.main" }}>
+                    <ListItem alignItems="flex-start">
+                        <ListItemAvatar>
+                            <Avatar alt="Mugiwara" src="/one-piece/mugiwara-flag.jpeg" sx={{ cursor: "pointer" }} />
+                        </ListItemAvatar>
+                        <ListItemText
+                            primary="[Group] Mugiwara"
+                            secondary={
+                                <React.Fragment>
+                                <Typography
+                                    sx={{ display: 'inline', margin: 0, color:theme.palette.text.main}}
+                                    component="span"
+                                    variant="body2"
+                                >
+                                    Nami
+                                </Typography>
+                                <Typography
+                                    sx={{ display: 'inline', margin: 0, color:theme.palette.text.minor }}
+                                    component="span"
+                                    variant="body2"
+                                >
+                                : Who was the funny one that put back the flag that Luf...
+                                </Typography>
+                            </React.Fragment>
+                            }
+                        />
                     </ListItem>
                     <Divider variant="inset" component="li" />
                     <ListItem alignItems="flex-start">
-                    <ListItemAvatar>
-                        <Avatar alt="Tama" src="/one-piece/tama-profile.webp" sx={{ cursor: 'pointer' }} />
-                    </ListItemAvatar>
-                    <ListItemText
-                        primary="Hey, Tama!"
-                        secondary={
-                        <React.Fragment>
-                            <Typography
-                            sx={{ display: 'inline' }}
-                            component="span"
-                            variant="body2"
-                            color="text.primary"
-                            >
-                            You
-                            </Typography>
-                            {': How are things going in Wano?? Hope great!!'}
-                        </React.Fragment>
-                        }
-                    />
+                        <ListItemAvatar>
+                            <Avatar alt="Tama" src="/one-piece/tama-profile.webp" sx={{ cursor: "pointer" }} />
+                        </ListItemAvatar>
+                        <ListItemText
+                            primary="Hey, Tama!"
+                            secondary={
+                                <React.Fragment>
+                                <Typography
+                                    sx={{ display: 'inline', margin: 0, color:theme.palette.text.main }}
+                                    component="span"
+                                    variant="body2"
+                                    color="theme.palette.text.main"
+                                >
+                                    You
+                                </Typography>
+                                <Typography
+                                    sx={{ display: 'inline', margin: 0, color:theme.palette.text.minor }}
+                                    component="span"
+                                    variant="body2"
+                                >
+                                : How are things going in Wano?? Hope great!!
+                                </Typography>
+                            </React.Fragment>
+                            }
+                        />
                     </ListItem>
                     <Divider variant="inset" component="li" />
                     <ListItem alignItems="flex-start">
-                    <ListItemAvatar>
-                        <Avatar alt="Garp" src="/one-piece/garp-profile.jpg" sx={{ cursor: 'pointer' }} />
-                    </ListItemAvatar>
-                    <ListItemText
-                        primary="Take care, Luffy"
-                        secondary={
-                        <React.Fragment>
-                            <Typography
-                            sx={{ display: 'inline' }}
-                            component="span"
-                            variant="body2"
-                            color="text.primary"
-                            >
-                            Garp
-                            </Typography>
-                            {": Stay strong and continue being the brave young m.."}
-                        </React.Fragment>
-                        }
-                    />
+                        <ListItemAvatar>
+                            <Avatar alt="Garp" src="/one-piece/garp-profile.jpg" sx={{ cursor: "pointer" }} />
+                        </ListItemAvatar>
+                        <ListItemText
+                            primary="Take care, Luffy"
+                            secondary={
+                            <React.Fragment>
+                                <Typography
+                                    sx={{ display: 'inline', margin: 0, color:theme.palette.text.main }}
+                                    component="span"
+                                    variant="body2"
+                                >
+                                Garp
+                                </Typography>
+                                <Typography
+                                    sx={{ display: 'inline', margin: 0, color:theme.palette.text.minor }}
+                                    component="span"
+                                    variant="body2"
+                                >
+                                : Stay strong and continue being the brave young m..
+                                </Typography>
+                            </React.Fragment>
+                            }
+                        />
                     </ListItem>
                 </List>
             </Box>

@@ -16,22 +16,27 @@ const UserBox = styled(Box)({
     marginBottom: "20px",
 });
   
-const Add = () => {
+const Add = ({theme}) => {
     const [open, setOpen] = useState(false);
     return (
       <>
         <Tooltip
           onClick={(e) => setOpen(true)}
-          title="Delete"
+          title="New Post"
           sx={{
             position: "fixed",
             bottom: 20,
             left: { xs: "calc(50% - 25px)", sm: 30 },
+            color: theme.palette.text.main,
+            bgcolor: theme.palette.primary.main,
+            "&:hover": {
+                bgcolor: theme.palette.primary.minor 
+            },
           }}
         >
-        <Fab color="primary" aria-label="add">
-            <AddIcon />
-        </Fab>
+            <Fab aria-label="add">
+                <AddIcon />
+            </Fab>
         </Tooltip>
         <SytledModal
           open={open}
@@ -42,8 +47,8 @@ const Add = () => {
             <Box
                 width={400}
                 height={280}
-                bgcolor={"background.default"}
-                color={"text.primary"}
+                bgcolor={theme.palette.secondary.medium}
+                color={theme.palette.text.main}
                 p={3}
                 borderRadius={5}
             >
@@ -60,23 +65,32 @@ const Add = () => {
                 </Typography>
                 </UserBox>
                 <TextField
-                sx={{ width: "100%" }}
-                id="standard-multiline-static"
-                multiline
-                rows={3}
-                placeholder="What's on your mind?"
-                variant="standard"
+                    sx={{
+                        width: "97%",
+                        padding: 1
+                    }}
+                    id="standard-multiline-static"
+                    multiline
+                    rows={3}
+                    placeholder="What's on your mind?"
+                    variant="standard"
+                    inputProps={{
+                        style: {
+                            color: theme.palette.text.minor,
+                        },
+                        placeholder: "What's on your mind?"
+                    }}
                 />
                 <Stack direction="row" gap={1} mt={2} mb={3} >
-                    <EmojiEmotions color="primary" sx={{ cursor: "pointer" }} />
-                    <Image color="secondary" sx={{ cursor: "pointer" }} />
+                    <EmojiEmotions sx={{ cursor: "pointer", color:"#E4B04D"}} />
+                    <Image sx={{ cursor: "pointer", color:"#1A56DA" }} />
                     <VideoCameraBack color="success" sx={{ cursor: "pointer" }} />
                     <PersonAdd color="error" sx={{ cursor: "pointer" }} />
                 </Stack>
                 <ButtonGroup
-                fullWidth
-                variant="contained"
-                aria-label="outlined primary button group"
+                    fullWidth
+                    variant="contained"
+                    aria-label="outlined primary button group"
                 >
                     <Button>Post</Button>
                     <Button sx={{ width: "100px" }}>
