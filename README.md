@@ -9,9 +9,9 @@ during the **[Material UI 5 (MUI) React Tutorial](https://www.youtube.com/watch?
 
 
 
-📌 **LIVE DEMO [UNDER CONSTRUCTION]: _https://social.gonza.gr/_**
+📌 **LIVE DEMO: _https://social.gonza.gr/_**
 
-[![Blog Demo Preview](https://i.postimg.cc/3JCZXcrT/under-construction.png)](https://i.postimg.cc/3JCZXcrT/under-construction.png)
+[![Social Demo Preview](https://postimg.cc/BXw5Dv05)](https://postimg.cc/BXw5Dv05)
 
 <br><br><br>
 
@@ -36,7 +36,7 @@ Since there are several files that were created in the previous step that are no
 _Official website: https://mui.com/_ (suite of UI tools to help you ship new features faster)
 
 ```bash
-npm install -legacy-peer-deps @mui/material @emotion/react @emotion/styled
+npm install -legacy-peer-deps @mui/material @emotion/react @emotion/styled @mui/icons-material
 ```
 
 <br>
