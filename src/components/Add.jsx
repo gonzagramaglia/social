@@ -67,11 +67,11 @@ const Add = () => {
                 placeholder="What's on your mind?"
                 variant="standard"
                 />
-                <Stack direction="row" gap={1} mt={2} mb={3} sx={{ cursor: "pointer" }} >
-                    <EmojiEmotions color="primary" />
-                    <Image color="secondary" />
-                    <VideoCameraBack color="success" />
-                    <PersonAdd color="error" />
+                <Stack direction="row" gap={1} mt={2} mb={3} >
+                    <EmojiEmotions color="primary" sx={{ cursor: "pointer" }} />
+                    <Image color="secondary" sx={{ cursor: "pointer" }} />
+                    <VideoCameraBack color="success" sx={{ cursor: "pointer" }} />
+                    <PersonAdd color="error" sx={{ cursor: "pointer" }} />
                 </Stack>
                 <ButtonGroup
                 fullWidth
