@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Favorite, FavoriteBorder, MoreVert, Share } from "@mui/icons-material";
+import { Favorite, FavoriteBorder, MoreVert, Share, ChatBubble, Delete } from "@mui/icons-material";
 import { Box, Avatar, Card, CardActions, CardContent, CardHeader, CardMedia, Checkbox, IconButton, Typography, TextField } from "@mui/material";
 
 
@@ -22,6 +22,12 @@ const Post = () => {
         setComments([...comments, comment]);
         setComment("");
         }
+    };
+
+    const handleDeleteComment = (index) => {
+        const updatedComments = [...comments];
+        updatedComments.splice(index, 1);
+        setComments(updatedComments);
     };
 
     return (
@@ -47,7 +53,7 @@ const Post = () => {
                 component="img"
                 height="20%"
                 image="/one-piece/post-frankey.jpeg"
-                alt="Paella dish"
+                alt="Frankey Shogun"
             />
             <CardContent>
                 <Typography variant="body2" color="text.secondary">
@@ -58,7 +64,7 @@ const Post = () => {
                 disableSpacing 
                 sx={{ margin:"-27px -10px -32px" }}
             >
-                <IconButton aria-label="add to favorites">
+                <IconButton aria-label="Add to favorites">
                 <Checkbox
                     checked={isChecked}
                     onChange={handleCheckboxChange}
@@ -66,7 +72,7 @@ const Post = () => {
                     checkedIcon={<Favorite sx={{ color: "red" }} />}
                 />
                 </IconButton>
-                <IconButton aria-label="share">
+                <IconButton aria-label="Share">
                     <Share />
                 </IconButton>
             </CardActions>
@@ -129,6 +135,13 @@ const Post = () => {
                         >
                             Luffy (Next Pirate King): {comment}
                         </Typography>
+                        <IconButton 
+                            aria-label="delete" 
+                            onClick={() => handleDeleteComment(index)}
+                            sx={{ marginLeft:"auto", marginRight:"20px" }}
+                        >
+                            <Delete />
+                        </IconButton>
                     </Box>
                 ))}
                 <form
