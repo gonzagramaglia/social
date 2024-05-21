@@ -1,4 +1,4 @@
-## Hey, I'm **[gonza](https://www.gonza.gr/)**
+## Hey, I'm **[Gonza](https://www.gonza.works/)**
 It's good to see that you have been interested in understanding this repository.<br><br>
 
 
@@ -9,9 +9,9 @@ during the **[Material UI 5 (MUI) React Tutorial](https://www.youtube.com/watch?
 
 
 
-📌 **LIVE DEMO: _https://social.gonza.gr/_**
+📌 **LIVE DEMO: _https://social.gonza.works/_**
 
-[![Social Demo Preview](https://i.postimg.cc/8c2zFQ9F/social-demo.png)](https://i.postimg.cc/8c2zFQ9F/social-demo.png)
+[![Social Demo Preview](https://i.postimg.cc/8c2zFQ9F/social-demo.png)](https://social.gonza.works/)
 
 <br><br><br>
 
