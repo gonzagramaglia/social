@@ -67,7 +67,7 @@ const App = () => {
             >
                 <nav>
                     <a 
-                        href="https://www.gonza.gr/" 
+                        href="https://www.gonza.works/" 
                         target="_blank"
                     >
                         <img src="/logo.png" alt="logo" className='logo' /> 
