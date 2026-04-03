@@ -69,7 +69,7 @@ const App = () => {
                     <a
                         href="https://gonzalogramagia.github.io/react"
                     >
-                        <img src="/logo.png" alt="logo" className='logo' />
+                        <img src={process.env.PUBLIC_URL + "/logo.png"} alt="logo" className='logo' />
                     </a>
                     <a
                         href="https://github.com/gonzalogramagia/project-social-network"

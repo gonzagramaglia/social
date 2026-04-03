@@ -57,7 +57,7 @@ const Add = ({theme}) => {
                 </Typography>
                 <UserBox>
                 <Avatar
-                    src="/one-piece/luffy-profile-one.jpeg"
+                    src={process.env.PUBLIC_URL + "/one-piece/luffy-profile-one.jpeg"}
                     sx={{ width: 30, height: 30 }}
                 />
                 <Typography fontWeight={500} variant="span">

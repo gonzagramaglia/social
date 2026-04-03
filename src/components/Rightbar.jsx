@@ -20,27 +20,27 @@ const Rightbar = ({ theme }) => {
                 <AvatarGroup max={7} sx={{ cursor: "pointer" }} >
                     <Avatar
                         alt="Shanks"
-                        src="/one-piece/shanks-profile.webp"
+                        src={process.env.PUBLIC_URL + "/one-piece/shanks-profile.webp"}
                     />
                     <Avatar
                         alt="Rayleigh"
-                        src="/one-piece/rayleigh-profile.webp"
+                        src={process.env.PUBLIC_URL + "/one-piece/rayleigh-profile.webp"}
                     />
                     <Avatar
                         alt="Hancock"
-                        src="/one-piece/hancock-profile.jpeg"
+                        src={process.env.PUBLIC_URL + "/one-piece/hancock-profile.jpeg"}
                     />
                     <Avatar
                         alt="Sabo"
-                        src="/one-piece/sabo-profile.avif"
+                        src={process.env.PUBLIC_URL + "/one-piece/sabo-profile.avif"}
                     />
                     <Avatar 
                         alt="Koby" 
-                        src="/one-piece/koby-profile.jpeg" 
+                        src={process.env.PUBLIC_URL + "/one-piece/koby-profile.jpeg"} 
                     />
                     <Avatar
                         alt="Vivi"
-                        src="/one-piece/vivi-profile.avif"
+                        src={process.env.PUBLIC_URL + "/one-piece/vivi-profile.avif"}
                     />
                     <Avatar alt="" src="" />
                     <Avatar alt="" src="" />
@@ -68,7 +68,7 @@ const Rightbar = ({ theme }) => {
                 <List sx={{ width: "100%", marginLeft:"-18px", maxWidth: 360, bgcolor: "theme.palette.secondary.main" }}>
                     <ListItem alignItems="flex-start">
                         <ListItemAvatar>
-                            <Avatar alt="Mugiwara" src="/one-piece/mugiwara-flag.jpeg" sx={{ cursor: "pointer" }} />
+                            <Avatar alt="Mugiwara" src={process.env.PUBLIC_URL + "/one-piece/mugiwara-flag.jpeg"} sx={{ cursor: "pointer" }} />
                         </ListItemAvatar>
                         <ListItemText
                             primary="[Group] Mugiwara"
@@ -95,7 +95,7 @@ const Rightbar = ({ theme }) => {
                     <Divider variant="inset" component="li" />
                     <ListItem alignItems="flex-start">
                         <ListItemAvatar>
-                            <Avatar alt="Tama" src="/one-piece/tama-profile.webp" sx={{ cursor: "pointer" }} />
+                            <Avatar alt="Tama" src={process.env.PUBLIC_URL + "/one-piece/tama-profile.webp"} sx={{ cursor: "pointer" }} />
                         </ListItemAvatar>
                         <ListItemText
                             primary="Hey, Tama!"
@@ -123,7 +123,7 @@ const Rightbar = ({ theme }) => {
                     <Divider variant="inset" component="li" />
                     <ListItem alignItems="flex-start">
                         <ListItemAvatar>
-                            <Avatar alt="Garp" src="/one-piece/garp-profile.jpg" sx={{ cursor: "pointer" }} />
+                            <Avatar alt="Garp" src={process.env.PUBLIC_URL + "/one-piece/garp-profile.jpg"} sx={{ cursor: "pointer" }} />
                         </ListItemAvatar>
                         <ListItemText
                             primary="Take care, Luffy"

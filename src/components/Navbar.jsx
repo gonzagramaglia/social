@@ -51,7 +51,7 @@ const Navbar = () => {
                     </Badge>
                     <Avatar
                         sx={{ width: 30, height: 30 }}
-                        src="/one-piece/luffy-profile-one.jpeg"
+                        src={process.env.PUBLIC_URL + "/one-piece/luffy-profile-one.jpeg"}
                         onClick={() => setIsOpen(true)}
                     />
                 </IconsContainer>

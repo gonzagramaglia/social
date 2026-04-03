@@ -31,7 +31,7 @@ const Post = ({ theme }) => {
                 avatar={
                     <Avatar 
                         alt="Frankey"
-                        src="/one-piece/frankey-profile.webp"
+                        src={process.env.PUBLIC_URL + "/one-piece/frankey-profile.webp"}
                         sx={{ bgcolor: "#20BB9A" }} aria-label="recipe"
                     >
                     </Avatar>
@@ -49,7 +49,7 @@ const Post = ({ theme }) => {
             <CardMedia
                 component="img"
                 height="20%"
-                image="/one-piece/post-frankey.jpeg"
+                image={process.env.PUBLIC_URL + "/one-piece/post-frankey.jpeg"}
                 alt="Frankey Shogun"
             />
             <CardContent>
@@ -79,7 +79,7 @@ const Post = ({ theme }) => {
                     >
                         <Avatar 
                             alt="Chopper"
-                            src="/one-piece/chopper-profile.webp"
+                            src={process.env.PUBLIC_URL + "/one-piece/chopper-profile.webp"}
                             sx={{ bgcolor: "#20BB9A", width:"30px", height:"30px" }} aria-label="recipe"
                         >
                         </Avatar>
@@ -98,7 +98,7 @@ const Post = ({ theme }) => {
                     >
                         <Avatar 
                             alt="Usopp"
-                            src="/one-piece/usopp-profile.jpeg"
+                            src={process.env.PUBLIC_URL + "/one-piece/usopp-profile.jpeg"}
                             sx={{ bgcolor: "#20BB9A", width:"30px", height:"30px" }} aria-label="recipe"
                         >
                         </Avatar>
@@ -118,7 +118,7 @@ const Post = ({ theme }) => {
                     >
                         <Avatar 
                             alt="Luffy"
-                            src="/one-piece/luffy-profile-one.jpeg"
+                            src={process.env.PUBLIC_URL + "/one-piece/luffy-profile-one.jpeg"}
                             sx={{ bgcolor: "#20BB9A", width:"30px", height:"30px" }} aria-label="recipe"
                         >
                         </Avatar>
