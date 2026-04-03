@@ -63,27 +63,27 @@ const App = () => {
             <Box
                 position="fixed"
                 width="100%"
-                sx={{ zIndex:"1" }}
+                sx={{ zIndex: "1" }}
             >
                 <nav>
-                    <a 
-                        href="https://front.gonza.gr/" 
-                        target="_blank"
+                    <a
+                        href="https://gonzalogramagia.github.io/react"
                     >
-                        <img src="/logo.png" alt="logo" className='logo' /> 
+                        <img src="/logo.png" alt="logo" className='logo' />
                     </a>
-                    <a 
-                        href="https://github.com/gonzagramaglia/social" 
+                    <a
+                        href="https://github.com/gonzalogramagia/project-social-network"
                         className='github-logo-container'
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <FaGithub size={23} style={{ color: '#a9a6c3' }} />
                     </a>
                 </nav>
             </Box>
             <Box bgcolor={theme.palette.secondary.main} color={theme.palette.text.main}>
-                <Navbar /> 
-                <Stack direction="row" spacing={ {xs:0, sm:2} } justifyContent="space-between" >
+                <Navbar />
+                <Stack direction="row" spacing={{ xs: 0, sm: 2 }} justifyContent="space-between" >
                     <Sidebar theme={theme} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
                     <Feed theme={theme} />
                     <Rightbar theme={theme} />
